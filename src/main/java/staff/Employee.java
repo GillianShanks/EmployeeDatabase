@@ -20,7 +20,7 @@ public abstract class Employee {
         return niNumber;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
