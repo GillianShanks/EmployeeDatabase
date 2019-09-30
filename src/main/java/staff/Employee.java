@@ -34,5 +34,9 @@ public abstract class Employee {
         return 0.01*this.salary;
     }
 
-
+    public void setName(String name) {
+        if (name != null && !name.equals("")) {
+            this.name = name;
+        }
+    }
 }
