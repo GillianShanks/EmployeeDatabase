@@ -44,4 +44,10 @@ public class ManagerTest {
     public void hasDepartmentName() {
         assertEquals("Testing", manager.getDeptName());
     }
+
+    @Test
+    public void doesNotRaiseNegative(){
+        manager.raiseSalary(-5000);
+        assertEquals(40000, manager.getSalary(), 0.01);
+    }
 }
