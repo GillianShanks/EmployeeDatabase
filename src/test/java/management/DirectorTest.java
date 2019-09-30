@@ -12,7 +12,7 @@ public class DirectorTest {
 
     @Before
     public void before(){
-        director = new Director("Cole", "SN9735R", 35000, "Testing", 10000);
+        director = new Director("Cole", "SN9735R", 45000, "Testing", 10000);
     }
 
     @Test
@@ -27,18 +27,18 @@ public class DirectorTest {
 
     @Test
     public void hasSalary() {
-        assertEquals(35000, director.getSalary(), 0.01);
+        assertEquals(45000, director.getSalary(), 0.01);
     }
 
     @Test
     public void canRaiseSalary() {
         director.raiseSalary(5000);
-        assertEquals(40000, director.getSalary(), 0.01);
+        assertEquals(50000, director.getSalary(), 0.01);
     }
 
     @Test
     public void canGetPayBonus() {
-        assertEquals(350, director.payBonus(), 0.01);
+        assertEquals(900, director.payBonus(), 0.01);
     }
 
     @Test
